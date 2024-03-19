@@ -41,9 +41,9 @@ learning; TL), after retraining with TL, and both without (NYU1) and with (NYU2)
 (AUCs)
 The local test set comprised 959 clients. The original AUCs from the NYU1 and NYU2 models
 were 0.83 and 0.89 respectively. The AUCs from the NYU1 and NYU2 models: 
-- 1. applied in their original form to the local test set were 0.76 and 0.84 respectively; 
-- 2. after local training without TL were 0.66 and 0.86 respectively; 
-- 3. after retraining with TL were 0.82 and 0.86 respectively.
+1. applied in their original form to the local test set were 0.76 and 0.84 respectively; 
+2. after local training without TL were 0.66 and 0.86 respectively; 
+3. after retraining with TL were 0.82 and 0.86 respectively.
 
 #### Conclusion 
 A deep learning system developed on a US population showed reduced performance when applied ‘out of the box’ to an Australian population. The availability of model weights allowed local retraining with transfer learning which substantially improved the model performance. Provision of model weights for transfer learning may be beneficial to enable deep
