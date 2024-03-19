@@ -27,20 +27,27 @@ Some authors have reported inconsistent performance of deep learning (DL) system
    - for both image-only (NYU1) and image with heatmaps (NYU2)
 
 #### Methods and Materials
-The primary outcome was area under the receiver operating curve (AUROC) retrospectively classifying invasive breast cancer or ductal carcinoma in situ (n=425) from no malignancy (n=490) or benign lesions (n=44), in age-matched controls. The NYU system was tested statically, after training without transfer learning (TL), after retraining with TL and without (NYU1) and with (NYU2) heatmaps.
-
-We applied the NYU patch-level model to South Australian mammograms which generates a heatmaps of malignant and benign lesion probability, based on NYU Radiologists' hand drawn segmentations. 
-These heatmaps, which essentially transfers expertise from international specialists, and are added to model input, improved performance.
+All clients with biopsy and surgical pathology-proven lesions and age-matched controls were
+identified from the (censored) public mammography screening program. The primary outcome
+was the AUC retrospectively classifying invasive breast cancer or ductal carcinoma in situ
+(n=425) from no malignancy (n=490) or benign lesions (n=44) in age-matched controls. The
+NYU system was tested in its original form, after training from scratch (without transfer
+learning; TL), after retraining with TL, and both without (NYU1) and with (NYU2) heatmaps.
 
 (heatmap examples)
 
 #### Results
 (table)
 (AUCs)
-The local test set comprised 959 clients (mean age = 62.5 years, SD = 8.5 years). The original AUCs from the NYU1 and NYU2 models were 83.0% (95%CI=82.4%-83.6%) and 88.6% (95%CI=88.3%-88.9%) respectively. The AUCs from the NYU1 and NYU2 models applied statically to the local test set were 75.8% (95%CI=72.6%-78.8%) and 84.5% (95%CI=81.9%-86.8%) respectively. The AUCs from the NYU1 and NYU2 models after local training without TL in the local test set were 65.8% (95%CI=62.2%-69.1%) and 85.9% (95%CI=83.5%-88.2%) respectively. The AUCs from the NYU1 and NYU2 models after retraining with TL in the local test set were 82.4%(95%CI=79.7-84.9%) and 86.3%(95%CI=84.0-88.5%) respectively.
+The local test set comprised 959 clients. The original AUCs from the NYU1 and NYU2 models
+were 0.83 and 0.89 respectively. The AUCs from the NYU1 and NYU2 models: 
+- 1. applied in their original form to the local test set were 0.76 and 0.84 respectively; 
+- 2. after local training without TL were 0.66 and 0.86 respectively; 
+- 3. after retraining with TL were 0.82 and 0.86 respectively.
 
 #### Conclusion 
-A deep learning system developed on a US population showed reduced performance when applied ‘out of the box’ to an Australian population. The availability of model weights allowed local retraining with transfer learning which substantially improved the model performance. Our results suggest that the validation of deep learning models across different clinical environments may be challenging, and that provision of model weights for transfer learning may be necessary in future to enable deep learning systems to be adapted to local clinical environments.
+A deep learning system developed on a US population showed reduced performance when applied ‘out of the box’ to an Australian population. The availability of model weights allowed local retraining with transfer learning which substantially improved the model performance. Provision of model weights for transfer learning may be beneficial to enable deep
+learning systems to be adapted to local clinical environments.
 
 #### Significance of Transfer Learning
 
