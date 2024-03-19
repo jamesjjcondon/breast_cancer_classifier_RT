@@ -1,0 +1,35 @@
+,Malignant
+Total Dataset,
+Patients and Screening Episodes,2837
+Image manufacturer / system vendor,
+"Philips Medical Systems, Philips Digital Mammography Sweden AB",1930
+Sectra Imtec AB,907
+Mean age at screening (standard deviation),63.097 (8.494)
+Hormone Replacement Therapy,498
+Stage (see table _),
+Histological diagnosis (see table _ ),
+Density (unknown),
+,
+Training set,
+Patients,1978
+Image manufacturer / system vendor,
+"Philips Medical Systems, Philips Digital Mammography Sweden AB",1343
+Sectra Imtec AB,635
+Mean age at screening (standard deviation),63.218 (8.405)
+Hormone Replacement Therapy,353
+,
+Validation set,
+Patients,434
+Image manufacturer / system vendor,
+"Philips Medical Systems, Philips Digital Mammography Sweden AB",296
+Sectra Imtec AB,138
+Mean age at screening (standard deviation),63.093 (8.745)
+Hormone Replacement Therapy,77
+,
+Testing set,
+Patients,425
+Image manufacturer / system vendor,
+"Philips Medical Systems, Philips Digital Mammography Sweden AB",291
+Sectra Imtec AB,134
+Mean age at screening (standard deviation),62.537 (8.644)
+Hormone Replacement Therapy,68

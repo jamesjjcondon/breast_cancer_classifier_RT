@@ -1,0 +1,11 @@
+fairscale
+h5py
+imageio
+numpy
+opencv-python
+pandas
+pytorch_lightning
+pydicom
+test-tube
+torch
+torchvision
